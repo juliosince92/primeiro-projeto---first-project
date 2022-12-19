@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+   width: 60%; 
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+
+li:hover {
+    color: #d21617;
+ }
+
+ #logo{
+    width: 60px;
+    height: auto;
+ }
+
+.action {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+label {
+    color: aliceblue;
+}
+
+#box-comments {
+    background-color:#120000;
+    border-radius: 5px;
+    border-color: #d21617; 
+    color: #fff;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin: 15px auto;
+    align-items: center;
+ }
+
+ footer {
+    height: 200px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+ }
+ 
+ span {
+    color: #fff;
+ }
+ 
+ .footer-navegation {
+ display: none;
+ width: 100%;
+ }
+ 
+ .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ @media(max-width: 768px) {
+
+    .footer-navegation{
+        display: block;
+     }
+  
+     header{
+        width: 100%;
+     }
+  
+     nav{
+        display: none;
+     }
+
+     footer {
+        height: 90px;
+        font-size: 8px;
+        margin-bottom: 20px;
+     }
+  
+    .footer-list{
+     width: auto;
+     }
+  
+    .action {
+        width: 90%;
+        margin: auto;
+    }
+
+ }
